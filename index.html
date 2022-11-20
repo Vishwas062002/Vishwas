@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Portifolio website </title>  
+     <link rel="stylesheet" href="style.css">
+     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+ </head>
+ <body>
+    <div id="header">
+     <div class="container">
+         <nav>
+             <img src="images/logo.png" class="logo">    
+             <ul id="sidemenu">
+                 <li>
+                     <li><a href="#header">Home</a></li>
+                     <li><a href="#about">About</a></li>
+                     <li><a href="#portfolio">Portifolio</a></li>
+                     <li><a href="#contact">Contact</a></li>
+                     <i class="fa-light fa-x" onclick="closemenu()"></i>
+                 </li>
+             </ul>
+             <!-- <i class="fa-light fa-bars" onclick="openmenu()"></i> -->
+         </nav>
+         <div class="header-text">
+             <p>Biomedical Engineer</p>
+             <h1>Hi, I'm <span>Vishwas</span> <br>from India</h1>
+         </div>
+     </div>
+
+    </div>
+    <!-- ------------about--------------- -->
+    <div id="about">
+     <div class="container">
+         <div class="row">
+             <div class="about-col-1">
+                 <img src="images/IMG_20220806_165502_Bokeh__01-01.jpeg" >
+             </div>
+             <div class="about-col-2">
+                 <h1 class="sub-title"> About me </h1>
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam harum perspiciatis, obcaecati eligendi deserunt dolore velit dicta nihil iure veritatis culpa sit recusandae. Cum minus libero ab. Aperiam doloremque reiciendis ipsam recusandae, porro ducimus ab voluptas atque quas eum dolores nesciunt nam non animi facere repellendus similique voluptatibus tenetur aliquid.</p>
+                 <div class="tab-titles">
+                     <p class="tab-links active-link" onclick="opentab('skills')">skills</p>
+                     <p class="tab-links" onclick="opentab('projects')" >Projects</p>
+                     <p class="tab-links" onclick="opentab('education')">Education</p>
+                     <p class="tab-links" onclick="opentab('extracurriculars')">Extracurriculars</p>
+                 </div>
+                 <div class="tab-contents active-tab" id="skills ">
+                     <ul>
+                         <li> <span>Python</span><br>App development / Machine programming</li>
+                         <li> <span>Matlab</span><br>Brain and machine interaction</li>
+                         <li> <span>Basics of C+</span><br>Microchip programming</li>
+                     </ul>
+                 </div>
+                 <div class="tab-contents" id="projects">
+                     <ul>
+                         <li> <span>S.A.S.S ( SENSOR ASSISTED SUPERVISION SYSTEM)  </span><br>- Reduce Death of the elderly and people with Alzheimer's disease due to lack of  assistance<br>- My responsibilities : Design,build a working circuit</li>
+                         <li> <span>DIGITAL MICROSCOPE</span><br>- Make transfer of microscopic data easier, faster and cost efficient.<br>- Eliminate the need for storage units by utilizing the "cloud" privileges.<br> - My responsibilities : Ideate and Design 3d models</li>
+                         <li> <span>THE BRAIN WAVE APP </span><br>- Build an App that records and sums up the duration at which the brain was observed to be in a relaxed state </li>
+                         <li> <span>GESTURE CONTROLLED ROBOTIC ARM</span><br>- Minimize hardazous workspace interaction ofmedical staff with the use of robots <br>- My responsibilities : Build the model and design the cuitry</li>
+                     </ul>
+                 </div>
+                 <div class="tab-contents" id="education">
+                     <ul>
+                         <li> <span>2024</span><br>Manipal Institute of Technology</li>
+                         <li> <span>2020</span><br>Sri Chaitanya College of Education</li>
+                     </ul>
+                 </div>
+                 <div class="tab-contents" id="extracurriculars">
+                     <ul>
+                         <li> <span>IEEE EMBS Manipal Chapter</span><br>- Events and Program Head ( Aug 2022 )<br>- Committee Member( June 2022 - Aug 2022)</li>
+                         <li> <span>BMESI Manipal Chapter</span><br>- Committee Member</li>
+                         <li> <span>Red x Manipal</span><br>- Member</li>
+                     </ul>
+                 </div>
+             </div>
+         </div>
+     </div>
+    </div>
+    <!-- ---------------MY WORK----------- -->
+    <div id="portfolio">
+     <div class="container">
+         <h1 class="sub-title">My Work</h1>
+         <div class="work-list">
+             <div class="work">
+                 <img src="images/work-1.png">
+                 <div class="layer">
+                     <h3>S.A.S.S </h3>
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, voluptatem?></p>
+                     <!-- <a href="#"><i class="fa-thin fa-arrow-up-right-from-square"></i></a>        -->
+                 </div>
+             </div>
+             <div class="work">
+                 <img src="images/work-2.png">
+                 <div class="layer">
+                     <h3>DIGITAL MICROSCOPE</h3>
+                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, tempore!</p>
+                     <!-- <a href="#"><i class="fa-solid fa-link"></i></a>         -->
+                 </div>
+             </div>
+             <div class="work">
+                 <img src="images/work-3.png">
+                 <div class="layer">
+                     <h3>THE BRAIN WAVE APP</h3>
+                     <p>- Build an App that records and sums up the duration at which the brain was observed to be in a relaxed state </li></p>
+                     <!-- <a href="#"><i class="fa-thin fa-arrow-up-right-from-square"></i></a>        -->
+                 </div>
+             </div>
+
+         </div>
+         <a href="#" class="btn">See more</a>
+     </div>
+    </div>
+    <!-- --------------contact----------- -->
+    <div id="contact">
+     <div class="container">
+         <div class="row">
+             <div class="contact-left">
+                 <h1 class="sub-title">Contact me</h1>
+                 <p><i class="fa fa-paper-plane-o"></i>  contact@example.com</p>
+                 <p><i class="fa fa-phone"></i>  0123456789</p>
+                 <div class="social-icons">
+                     <a href="https://www.linkedin.com/in/vishwas-s-b67490239"><i class="fa fa-linkedin-square"></i></a>
+                     <a href=""><i class="fa fa-instagram"></i></a>
+                 </div>
+                 <a href="/my-cv.pdf" download class="btn btn2">Download CV</a>
+             </div>
+             <div class="contact-right">
+                 <form >
+                     <input type="text" name="Name" placeholder="Your Name" required>
+                     <input type="email" name="emal" placeholder="Your Email" required>
+                     <textarea name="Message" rows="6" placeholder="Your Message "></textarea>
+                     <button type="submit" class="btn btn2">Submit</button>
+
+                 </form>
+
+             </div>
+         </div>
+     </div>
+     <div class="copyright">
+         <p>Copyright © vishwas</p>
+     </div>
+    </div>
+
+    <!-- ----------------ISSUE HERE 40:10--------------- -->
+    <script>
+     var tablinks = document.getElementsByClassName("tab-links");
+     var tabcontents = document.getElementsByClassName("tab-contents");
+
+     function opentab(tabname){
+         for(tablink of tablinks){
+             tablink.classlist.remove("active-link");
+         }
+         for(tabcontent of tabcontents){
+             tabcontent.classlist.remove("active-tab");
+         } 
+
+     }
+    </script>
+    <script>
+     var sidemeu = document.getElementById("sidemenu");
+     function openmenu(){
+         sidemeu.style.right = "0"
+     }  
+     function closemenu(){
+         sidemeu.style.right = "-200px"
+     }  
+     </script>
+
+
+ </body>
+ </html>
