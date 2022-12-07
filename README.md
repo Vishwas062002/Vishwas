@@ -1,2 +1,2 @@
 # Vishwas
-MIT, Manipal
+https://vishwas062002.github.io/Vishwas/
