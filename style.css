@@ -258,8 +258,15 @@ nav ul li a:hover::after {
 }
 
 /* --------------contact------------ */
+.cnt {
+    position: absolute;
+    margin-left: 36%;
+    margin-top: -40px;
+    font-size: 30px;
+}
 .contact-left {
     flex-basis: 35%;
+    text-align: center;
 }
 
 .contact-right {
@@ -273,8 +280,8 @@ nav ul li a:hover::after {
 
 .contact-left p i {
     color: #0AF0EC;
-    margin-right: 15px;
     font-size: 25px;
+    text-align: center;
 
 }
 
@@ -290,6 +297,7 @@ nav ul li a:hover::after {
     color: #ababab;
     display: inline-block;
     transition: transform 0.5s;
+    
 }
 
 .social-icons a:hover {
@@ -300,6 +308,7 @@ nav ul li a:hover::after {
 .btn.btn2 {
     display: inline-block;
     background: #0AF0EC;
+    text-align: center;
 }
 
 .contact-right form {
@@ -307,7 +316,7 @@ nav ul li a:hover::after {
 
 }
 
-form input,
+/* form input,
 form textarea {
     width: 100%;
     border: 0;
@@ -317,15 +326,43 @@ form textarea {
     margin: 15px 0;
     color: #fff;
     font-size: 18px;
-    border-radius: 6px;
+    border-radius: 6px; */
 
-}
+/* } */
 
 form .btn2 {
     padding: 14px 60px;
     font-size: 18px;
     margin-top: 20px;
     cursor: pointer;
+    text-align: center;
+}
+/* ________________________________________________________________ */
+
+.linkedin{
+    margin-left: 100px;
+    margin-top: 100px;
+
+}
+.github{
+    margin-left: 260px;
+    margin-top: 100px;
+}
+.mail{
+    margin-left: 260px;
+    margin-top: 100px;
+}
+.instagram{
+    margin-left: 260px;
+    margin-top: 100px;
+}
+
+/* ________________________________________________________________ */
+.num{
+    position: absolute;
+    margin-left: 555px;
+    margin-top: 40px;
+
 }
 
 .copyright {
@@ -334,7 +371,7 @@ form .btn2 {
     padding: 25px;
     background: #262626;
     font-weight: 300;
-    margin-top: 20px;
+    margin-top: 120px;
 }
 
 /* -------------css for small screen----------- */
@@ -428,5 +465,7 @@ nav .fas {
     .copyright {
         font-size: 14px;
 
+
     }
+    
 }
