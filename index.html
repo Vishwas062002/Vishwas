@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portifolio website </title>
+    <title>Vishwas S</title>
     <link rel="stylesheet" href="style.css">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
@@ -14,7 +14,7 @@
     <div id="header">
         <div class="container">
             <nav>
-                <img src="images/logo.png" class="logo">
+                <img src="/images/logo.png" class="logo">
                 <ul id="sidemenu">
                     <li>
                     <li><a href="#header">Home</a></li>
@@ -31,14 +31,14 @@
                 <h1>Hi, I'm <span>Vishwas</span> <br>from India</h1>
             </div>
         </div>
-
     </div>
+
     <!-- ------------about--------------- -->
     <div id="about">
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
-                    <img src="images/IMG_20220806_165502_Bokeh__01-01.jpeg">
+                    <img src="/images/IMG_20220806_165502_Bokeh__01-01.jpeg">
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title"> About me </h1>
@@ -52,7 +52,7 @@
                         <p class="tab-links" onclick="opentab('education')">Education</p>
                         <p class="tab-links" onclick="opentab('extracurriculars')">Extracurriculars</p>
                     </div>
-                    <div class="tab-contents active-tab" id="skills ">
+                    <div class="tab-contents active-tab" id="skills">
                         <ul>
                             <li> <span>Python</span><br>App development / Machine programming</li>
                             <li> <span>Matlab</span><br>Brain and machine interaction</li>
@@ -98,7 +98,7 @@
             <h1 class="sub-title">My Work</h1>
             <div class="work-list">
                 <div class="work">
-                    <img src="images/work-1.png">
+                    <img src="/images/work-1.png">
                     <div class="layer">
                         <h3>S.A.S.S </h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, voluptatem?></p>
@@ -106,7 +106,7 @@
                     </div>
                 </div>
                 <div class="work">
-                    <img src="images/work-2.png">
+                    <img src="/images/work-2.png">
                     <div class="layer">
                         <h3>DIGITAL MICROSCOPE</h3>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, tempore!</p>
@@ -114,7 +114,7 @@
                     </div>
                 </div>
                 <div class="work">
-                    <img src="images/work-3.png">
+                    <img src="/images/work-3.png">
                     <div class="layer">
                         <h3>THE BRAIN WAVE APP</h3>
                         <p>- Build an App that records and sums up the duration at which the brain was observed to be in
@@ -162,21 +162,22 @@
 
     <!-- ----------------ISSUE HERE 40:10--------------- -->
     <script>
-        var tablinks = document.getElementsByClassName("tab-links");
-        var tabcontents = document.getElementsByClassName("tab-contents");
+        let tablinks = document.getElementsByClassName("tab-links");
+        let tabcontents = document.getElementsByClassName("tab-contents");
 
-        function opentab(tabname) {
+        async function opentab(tabname) {
             for (tablink of tablinks) {
-                tablink.classlist.remove("active-link");
+                tablink.classList.remove("active-link");
             }
             for (tabcontent of tabcontents) {
-                tabcontent.classlist.remove("active-tab");
+                tabcontent.classList.remove("active-tab");
             }
-
+            event.currentTarget.classList.remove("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
         }
     </script>
     <script>
-        var sidemeu = document.getElementById("sidemenu");
+        let sidemeu = document.getElementById("sidemenu");
         function openmenu() {
             sidemeu.style.right = "0"
         }
@@ -184,8 +185,6 @@
             sidemeu.style.right = "-200px"
         }  
     </script>
-
-
 </body>
 
 </html>
